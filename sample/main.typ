@@ -1,15 +1,37 @@
 #import "../src/lib.typ": template_minimal_styling
 
 #show: template_minimal_styling
-#set page(header: align(right)[Template])
+#set page(header: align(right)[Minimal Styling Template])
 
 #let lipsum_fox = "the quick brown fox jumps over the lazy dog"
 
 #outline(depth: 1)
 
-= 一级标题 Heading Level 1
+= #link("")[Links]
 
-#lorem(20)
+- #link("")[#lipsum_fox]
+- #link("")[#upper(lipsum_fox)]
+- #link("")[链接示例]
+
+= Code
+
+This is the sample of ```typ #raw(block: false)``` #lorem(20)
+
+```ts
+// sample of #raw(block: true)
+const arr = [1, 2, 3]
+
+for (let i = 0; i < arr.length; arr += 1) {
+  arr[i]
+}
+```
+
+= Footnotes
+
+#lorem(10)#footnote([one])
+#lorem(10)#footnote([two])#footnote([#link("")[link in footnote]])
+
+= Title
 
 == 二级标题 Heading Level 2
 
@@ -30,33 +52,6 @@
 ====== 六级标题 Heading Level 6
 
 #lorem(20)
-
-= #link("")[Links]
-
-#link("")[#lipsum_fox]
-#link("")[#upper(lipsum_fox)]
-
-#link("")[链接示例]
-#link("")[链接示例]
-#link("")[链接示例]
-
-= Code
-
-This is the sample of ```typ #raw(block: false)``` #lorem(20)
-
-```ts
-// sample of #raw(block: true)
-const arr = [1, 2, 3]
-
-for (let i = 0; i < arr.length; arr += 1) {
-  arr[i]
-}
-```
-
-= Footnotes
-
-#lorem(20)#footnote([one])
-#lorem(20)#footnote([two])#footnote([#link("")[link in footnote]])
 
 
 = Table

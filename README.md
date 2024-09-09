@@ -4,6 +4,8 @@ Minimal styling to make typst look like the preview of github markdown[^1][^2].
 
 > 🎯 My purpose is not to replicate github markdown styling completely. Instead, just make me do not case too much about forming a good styling while taking notes in most cases.
 
+![preview](thumbnail.png)
+
 # How to use
 install [`just`](https://github.com/casey/just)
 
