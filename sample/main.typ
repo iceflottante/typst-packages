@@ -15,7 +15,7 @@
 
 = Code
 
-This is the sample of ```typ #raw(block: false)``` #lorem(20)
+This is the sample of ```typ #raw(block: false)``` #lorem(5) #raw(lorem(5)) `sample with space in the end   ` #lorem(5)
 
 ```ts
 // sample of #raw(block: true)

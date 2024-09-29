@@ -86,13 +86,22 @@
   show: _template_text
 
   let _raw_common_options = (radius: 3pt, fill: _theme.color.raw)
+
   show raw.where(block: true): set block(.._raw_common_options, width: 100%, inset: 8pt)
+
+  // https://typst.app/docs/reference/text/raw/#parameters-block
   show raw.where(block: false): box.with(
     .._raw_common_options,
     inset: (x: 2.7pt),
     outset: (y: 1.3pt),
     baseline: 2pt,
   )
+
+  // https://github.com/typst/typst/discussions/3988
+  show raw.where(block: false): it => {
+    show " ": " " + sym.zws
+    it
+  }
   doc
 }
 
