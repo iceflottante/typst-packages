@@ -123,6 +123,7 @@
   doc
 }
 
+// https://github.com/talal/ilm/blob/aaa225f53034dd229b53d98ed185a0fb813f94ad/lib.typ#L214
 #let _template_table(doc) = {
   doc
 }
