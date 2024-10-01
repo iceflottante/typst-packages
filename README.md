@@ -37,6 +37,7 @@ then, use the local typst package like this:
 - [`octique`](https://typst.app/universe/package/octique) : github handcrafted icons
 - [`note-me`](https://typst.app/universe/package/note-me) : github-style alert
 - [`ilm`](https://typst.app/universe/package/ilm/): a minimal template
+- [`cheq`](https://typst.app/universe/package/cheq): markdown-like checkboxes
 
 # Footnotes
 
