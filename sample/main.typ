@@ -62,3 +62,16 @@ for (let i = 0; i < arr.length; arr += 1) {
   [cell 1], [cell 2], [cell 3],
   [cell 1], [cell 2], [cell 3],
 )
+
+= Fonts
+
+English:\
+THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\
+the quick brown fox jumps over the lazy dog\
+
+Emoji: ✅⬜🚩🏆
+
+中文简体
+中文繁體
+にほんご
+한국어

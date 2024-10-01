@@ -17,9 +17,15 @@
       "Helvetica",
       "Arial",
       "Sans Serif Collection",
+      
+      // fonts that nice to have
+      "MiSans",
+
+      // use system fonts for fallback 
+      "PingFang SC",
       "Microsoft YaHei",
-      "Apple Color Emoji",
       "Segoe UI Emoji",
+      "Apple Color Emoji",
     ),
   ),
   color: (
