@@ -8,7 +8,7 @@ entrypoint = "src/lib.typ"
 
 authors = ["ziv3@outlook.com"]
 
-repository = "https://github.com/icyzeroice/typst-template-minimal-styling"
+repository = "https://github.com/icyzeroice/typst-packages/tree/main/packages/minimal-styling"
 license = "MIT"
 
 keywords = ["minimal", "github markdown"]
