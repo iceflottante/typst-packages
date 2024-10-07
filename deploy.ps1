@@ -1,3 +1,10 @@
+$IsTargetPsVersion = $PSVersionTable.PSVersion.Major -ge 7 -or ($PSVersionTable.PSVersion.Major -eq 7 -and $PSVersionTable.PSVersion.Minor -ge 4 )
+
+if (-not $IsTargetPsVersion) {
+  throw "Need PowerShell >= 7.4 (>= .Net 8.0)"
+}
+
+
 # https://docs.rs/dirs/latest/dirs/index.html
 # https://learn.microsoft.com/en-us/dotnet/api/system.environment.specialfolder?view=net-8.0
 $SourcePath = "./packages"
