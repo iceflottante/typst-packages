@@ -11,7 +11,7 @@ $SourcePath = "./packages"
 # $LocalInstallPath = "./local"
 $LocalInstallPath = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::LocalApplicationData) + '/typst/packages/local'
 
-function Copy-Typst-Private-Package {
+function Copy-Typst-Local-Package {
     param (
         $Name,
         $Version
@@ -34,9 +34,19 @@ function Copy-Typst-Private-Package {
     Write-Output "✅ install $src to $dst"
 }
 
+function Get-Typst-Package-Version {
+  param (
+    $Name
+  )
+  
+  $toml_filepath = "$SourcePath/$Name/typst.toml"
+  
+  Select-String -Path $toml_filepath -Pattern "version" -SimpleMatch | Out-String -Stream | Select-String -Pattern "\d+\.\d+\.\d+" | ForEach-Object { $_.Matches[0].Value }
+}
+
 
 $TypstPackageNames = Get-ChildItem $SourcePath
 foreach ($TypstPackageName in $TypstPackageNames) {
-    # Write-Output $TypstPackageName | Format-List
-    Copy-Typst-Private-Package -Name $TypstPackageName.Name -Version "0.1.0"
+    $TypstPackageVersion = $(Get-Typst-Package-Version -Name $TypstPackageName.Name)
+    Copy-Typst-Local-Package -Name $TypstPackageName.Name -Version $TypstPackageVersion
 }
