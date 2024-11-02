@@ -1,5 +1,6 @@
 #let _theme = (
   font_size: (
+    title: 32pt / 1.5,
     h1: 32pt / 1.5,
     h2: 24pt / 1.5,
     h3: 20pt / 1.5,
@@ -17,11 +18,11 @@
       "Helvetica",
       "Arial",
       "Sans Serif Collection",
-      
+
       // fonts that nice to have
       "MiSans",
 
-      // use system fonts for fallback 
+      // use system fonts for fallback
       "PingFang SC",
       "Microsoft YaHei",
       "Segoe UI Emoji",
@@ -146,3 +147,11 @@
   doc
 }
 
+#let component_title(body) = {
+  align(
+    center,
+    block(
+      text(_theme.font_size.title, body),
+    ),
+  )
+}

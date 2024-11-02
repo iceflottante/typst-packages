@@ -1,11 +1,12 @@
-#import "../src/lib.typ": template_minimal_styling
+#import "../src/lib.typ": template_minimal_styling, component_title
 
 #show: template_minimal_styling
-#set page(header: align(right)[Minimal Styling Template])
 
-#let lipsum_fox = "the quick brown fox jumps over the lazy dog"
+#component_title("文章标题 Title")
 
 #outline(depth: 1)
+
+#let lipsum_fox = "the quick brown fox jumps over the lazy dog"
 
 = #link("")[Links]
 
