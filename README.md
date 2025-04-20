@@ -1,6 +1,6 @@
 # My collection for typst packages
 
-> PowerShell is compatible for macOS, Windows and Linux. Just [install it](https://github.com/PowerShell/PowerShell?tab=readme-ov-file#get-powershell) and it is so convenient!
+> `rust-lang` and `cargo` is compatible for macOS, Windows and Linux. Just [install it](https://www.rust-lang.org/learn/get-started) and it is so convenient!
 
 | package | description |
 |:--:|:--:|
