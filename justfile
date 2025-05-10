@@ -10,7 +10,8 @@ local:
   # pwsh deploy.ps1
   nu deploy.nu
   
-c:
+[doc("save and sync to the cloud")]
+s:
   git add -A
   npx gitmoji-cli -c
   git push origin
