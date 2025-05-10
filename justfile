@@ -10,7 +10,7 @@ local:
   # pwsh deploy.ps1
   nu deploy.nu
   
-commit:
+c:
   git add -A
   npx gitmoji-cli -c
   git push origin
