@@ -1,7 +1,7 @@
 # for testing
 # let install_path = "./local"
 
-let install_path = $env.APPDATA | path join "typst" "packages" "local"
+let install_path = $nu.data-dir | path dirname | path join "typst" "packages" "local"
 
 let source_path = "./packages"
 
